@@ -31,7 +31,7 @@
             nav {
                 color: #111;
                 background-color: rgb(230,230,230);
-                overflow-y: scroll;
+                overflow-y: auto;
                 width: 25%;
             }
             nav, nav section, nav section ol {
@@ -61,8 +61,10 @@
                 color: var(--theme-color);
                 text-decoration: underline;
             }
-            section {
+            body > section {
                 overflow-y: scroll;
+            }
+            section {
                 width: 75%;
                 padding: 1em;
             }
