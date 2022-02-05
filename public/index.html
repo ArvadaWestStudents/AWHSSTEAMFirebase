@@ -1,89 +1,295 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en" translate="no">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google" content="notranslate" />
+        <link rel="shortcut icon" href="assets/images/logo_icon.svg" sizes="any" type="image/svg+xml">
+        <script src="assets/js/domlib.js"></script>
+        <script src="assets/js/domlib-extra.js"></script>
+        <script src="assets/js/jsion.js"></script>
+        <script src="assets/js/shml.js"></script>
+        <script>onerror=alert</script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+            html {
+                font-family: Arial;
+            }
+            body {
+                max-height: 100vh;
+                margin: 0;
+                line-height: 1.6;
+                font-size: 18px;
+                color: #444;
+                display: flex;
+                background-color: rgb(250,250,250);
+            }
+            body, html {
+                height: 100%;
+            }
+            nav {
+                color: #111;
+                background-color: rgb(230,230,230);
+                overflow-y: scroll;
+                width: 25%;
+            }
+            nav, nav section, nav section ol {
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+            nav li:last-of-type {
+                padding-bottom: 0.5em;
+            }
+            nav hr {
+                margin: 0 1em;
+            }
+            nav label {
+                font-size: 1.5em;
+            }
+            nav a  {
+                color: inherit;
+            }
+            nav ol li {
+                font-weight: bold;
+            }
+            nav ol li a {
+                font-weight: initial;
+                text-decoration: none;
+            }
+            nav ol li a.active, nav ol li a:hover {
+                color: var(--theme-color);
+                text-decoration: underline;
+            }
+            section {
+                overflow-y: scroll;
+                width: 75%;
+                padding: 1em;
+            }
+            section article {
+                width: 75%;
+                margin: 40px auto;
+            }
+            article h1 {
+                font-size: xx-large;
+            }
+            article header h1 {
+                font-size: 3em;
+                margin-bottom: 0;
+            }
+            article h1, article h2, article h3 {
+                line-height: 1.2;
+            }
+            article a:first-of-type {
+                text-decoration: none;
+            }
+            :is(h1, h2, h3, h4, h5, h6) {
+                color: var(--theme-color)
+            }
+            :is(h1, h2, h3, h4, h5, h6) a {
+                color: inherit;
+                text-decoration: none;    
+            }
+            article h2:first-of-type span, article h1:first-of-type span {
+                font-family: 'Varela Round', Arial;
+            }
+            hr {
+                border: none;
+                border-bottom: 0.5em dotted var(--theme-color);
+            }
+            nav hr {
+                border-bottom: 0.5em dotted currentColor;
+            }
+            table {
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 4px;
+                border: 2px solid #444;
+            }
+            code {
+                background-color: rgb(230,230,230);;
+                color: black;
+                border-radius: 4px;
+                padding: 2px;
+                font-size: 0.75em;
+                font-weight: normal;
+            }
+        </style>
+    </head>
+    <body style="opacity: 0;">
+        <nav>
+            <a href="/">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 792 612" style="enable-background:new 0 0 792 612;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0{fill:none;stroke:currentColor;stroke-width:2;stroke-miterlimit:10;}
+                        .st2{fill:none;stroke:currentColor;stroke-miterlimit:10;}
+                    </style>
+                    <g id="Layer_1" style="transform: translate(-140px, -200px) scale(1.75)">
+                        <path class="st0" d="M193.34,176.65c0,0-46.85-60.84-55.98-59.02s-18.25,69.97-18.25,69.97s-35.5,54.15-45.44,54.15
+                            c0,0,2.85,246.37,5.89,246.37c3.04,0,96.74,0,96.74,0s-6.08-106.44,34.07-111.91c0,0,60.23,23.12,63.28,21.29
+                            c3.04-1.83,40.76-38.33,43.81-46.85c0,0,21.29-28.6,12.78-34.07c-8.52-5.48-27.99-32.14-27.99-32.14s-12.78-39.05-12.17-41.48
+                            c0.61-2.43-51.11-37.11-51.11-37.11l-6.69-72.4L193.34,176.65z"/>
+                        <g id="Layer_2">
+                            <path class="st2" d="M232.28,133.45c0,0-13.3,51.21-5.85,62.29c7.46,11.08,12.35,8.05,12.35,8.05"/>
+                            <path class="st2" d="M198.09,171.39l22.14,56.86c0,0,58.36,18.1,58.36,16.99s-6.65-16.69-6.65-16.69"/>
+                            <polyline class="st2" points="278.59,245.24 286.34,264.45 294.9,261.25 		"/>
+                            <polyline class="st2" points="286.34,264.45 278.59,279.59 307.4,302.86 312.84,298.21 		"/>
+                            <polyline class="st2" points="307.4,302.86 324.76,324.29 332.24,321.39 		"/>
+                            <path class="st2" d="M324.76,324.29c0,0-4.45,4.44-22.01,0c0,0,14.68,18.94,14.46,26.96"/>
+                            <path class="st2" d="M305.81,328.45c0.4,0.57,23.68-2.36,20.39,0l-12.89,11.79"/>
+                            <polyline class="st2" points="265.9,360.76 227.33,382.59 216.37,352.47 296.49,365.89 		"/>
+                            <line class="st2" x1="253.94" y1="367.53" x2="288.24" y2="383.94"/>
+                            <path class="st0" d="M210.38,376.21c0,0-43.97-1.2-51.15-9.62s-19.4-41.77-19.4-41.77"/>
+                            <polyline class="st2" points="216.37,352.47 158.44,291.87 74.59,372.93 		"/>
+                            <line class="st2" x1="218.03" y1="357.04" x2="170.05" y2="371.52"/>
+                            <path class="st2" d="M146.14,340.88c0.08,0.19,53.54-5.87,53.54-5.87"/>
+                            <path class="st2" d="M187.99,322.78c-0.2-0.21,0.86-77.49,0.86-77.49l45.06,42.2l-0.8,17.94l25.11,16.08l-10.63,10.9l51.39,16.95"
+                                />
+                            <line class="st2" x1="279.49" y1="300.38" x2="258.23" y2="321.5"/>
+                            <path class="st2" d="M262.22,317.53c0.07-0.07,38.69,18.99,38.69,18.99"/>
+                            <path class="st2" d="M278.59,279.59l-11.86-3.54l-11.29-18.19l-41.46-4.65l21.26,10.1c0,0.66-1.39,25.49-1.39,25.49"/>
+                            <polyline class="st2" points="235.24,263.3 253.94,274.73 302.75,324.29 296.49,365.89 305.05,366.6 		"/>
+                            <line class="st2" x1="253.94" y1="274.73" x2="266.73" y2="276.05"/>
+                            <line class="st2" x1="255.44" y1="257.86" x2="256.82" y2="239.38"/>
+                            <polyline class="st2" points="213.98,253.21 188.85,245.29 181.16,245.24 175.24,205.37 173.98,169.76 134.34,120.51 
+                                128.9,219.98 		"/>
+                            <path class="st2" d="M174.7,189.96c0,0,11.98,3.12,21.73,5.66c-0.33-0.38-0.52-0.6-0.52-0.6l-21.92-25.25"/>
+                            <path class="st2" d="M195.91,195.01c0.52,0.6,13.25,4.83,13.25,4.83"/>
+                            <path class="st2" d="M177.98,223.8c-1.64,2.31-19.54,68.07-19.54,68.07"/>
+                            <polyline class="st2" points="169.56,251.7 128.9,219.98 121.57,171.39 		"/>
+                            <path class="st2" d="M124.7,270.86c0,0,1.41-17.05,2.73-33.03c-5.56-5.85-24.99-26.29-24.99-26.29"/>
+                            <line class="st2" x1="128.9" y1="219.98" x2="127.43" y2="237.83"/>
+                            <line class="st2" x1="85.95" y1="232.22" x2="152.07" y2="298.02"/>
+                            <polyline class="st2" points="109.92,256.07 88.57,313.57 74.59,302.86 		"/>
+                            <path class="st2" d="M88.57,313.57c0,0,26.05,20.66,25.25,21.43l66.16,88.29"/>
+                            <polyline class="st2" points="162.91,369.14 157.62,393.46 146.14,488.13 		"/>
+                            <path class="st2" d="M153.88,424.25c-1.36-0.64-77.27-3.1-77.27-3.31"/>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+            <hr>
+            <section>
+                <label>Page Content</label>
+                <ol></ol>
+            </section>
+        </nav>
+        <section>
+            <article>
+                <script>
+                    (async function ($host) {
+                        async function text(resource) {
+                            try {
+                                const response = await fetch(resource);
+                                return response.ok ? await response.text() : null;
+                            } catch(ignored) {
+                                return null;
+                            }
+                        }
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.6.6/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.6.6/firebase-auth.js"></script>
-    <script defer src="/__/firebase/9.6.6/firebase-database.js"></script>
-    <script defer src="/__/firebase/9.6.6/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/9.6.6/firebase-functions.js"></script>
-    <script defer src="/__/firebase/9.6.6/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/9.6.6/firebase-storage.js"></script>
-    <script defer src="/__/firebase/9.6.6/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/9.6.6/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/9.6.6/firebase-performance.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+                        // External link icon by Heroicons
+                        const EXTERNAL_LINK =
+                            new SVGNode('svg', { viewBox: '0 0 20 20', fill: 'currentColor', children: [
+                                new SVGNode('path', {d: "M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"}),
+                                new SVGNode('path', {d: "M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"})
+                            ], style: {
+                                height: '1em',
+                                width: '1em',
+                                'vertical-align': 'text-bottom'
+                            }});
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+                        const symbols = new Map(Object.entries(JSION.parse(await text('/cfg/symbols.jsion') || '{}')));
+                        const properties = new Map(Object.entries(JSION.parse(await text('/cfg/properties.jsion') || '{}')));
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+                        document.body.style.setProperty('--theme-color', properties.get('themeColor') ?? 'inherit');
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+                        const header = new HTMLNode('header', {innerHTML: SHML.parseMarkup(await text('/cfg/header.md') ?? '', symbols, properties).replace(/(?<=<|<\/)a/g, 'span')});
+
+                        const pathname = `${window.location.pathname.replace(/^\/?$/, 'index')}.md`
+                        
+                        const params = new URLSearchParams(window.location.search);
+
+                        const result = SHML.parseMarkup(pathname === 'index.md' && params.has('mdstr') ? decodeURIComponent(params.get('mdstr')) : await text(pathname) ?? '', symbols, properties)
+                        const main = new HTMLNode('main', {innerHTML: result.toString()});
+                        
+                        document.title = result.properties.get('title') ?? document.title;
+
+                        const footer = new HTMLNode('footer', {innerHTML: SHML.parseMarkup(await text('/cfg/footer.md') ?? '', symbols, properties)});
+
+                        for(const anchor of [/*...header.$$self`a`.$toArray(),*/ ...main.$$self`a`.$toArray(), ...footer.$$self`a`.$toArray()])
+                            if(anchor.origin !== window.location.origin)
+                                anchor.appendChild(EXTERNAL_LINK.cloneNode(true));
+
+
+                        for(const element of main.$$self`*[id]`.$toArray())
+                            if(result.ids.has(element.id))
+                                $`nav ol`.appendChild(new HTMLNode('li', {children: [
+                                    new HTMLNode('a', {
+                                        href: `#${element.id}`,
+                                        textContent: element.textContent
+                                    })
+                                ]}));
+
+                        $host.replaceChildren(new HTMLNode('a', {href: '/', children:[header]}), main, footer);
+                        
+                        document.getElementById(window.location.hash.substring(1))?.scrollIntoView();
+                        
+                        document.body.style.opacity = '';
+                        })($host).catch(function(error) {
+                            document.body.replaceChildren(new HTMLNode('div', {
+                                children: [
+                                    new HTMLNode('div', {children: [
+                                        new HTMLNode('h1', {
+                                            textContent: 'Error Loading Page:',
+                                            style: {
+                                                marginBottom: 0
+                                            }
+                                        }),
+                                        new HTMLNode('div', {children:[
+                                            new HTMLNode('p', {children: [
+                                                new HTMLNode('strong', 'Message: '),
+                                                new TextNode(error?.toString?.() ?? 'Unknown Error')
+                                            ]}),
+                                            new HTMLNode('p', {children: [
+                                                new HTMLNode('strong', 'Time: '),
+                                                new TextNode(new Date().toString())
+                                            ]}),
+                                            new HTMLNode('p', {children: [
+                                                new HTMLNode('strong', 'URL: '),
+                                                new TextNode(window.location)
+                                            ]}),
+                                            new HTMLNode('p', 'Try a different browser?')
+                                        ], style: {padding: '1em'}})
+                                    ]})
+                                ],
+                                style: {
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    width: '100vw',
+                                    height: '100vh',
+                                    margin: 0
+                                }
+                            }))
+
+                            document.body.style.opacity = '';
+                        });
+
+                    
+                        $host.parentElement.addEventListener('scroll', function(event) {
+                            const anchors  = $$`nav ol li a`
+                            if(anchors.$length < 1) return;
+                            anchors.classList.remove('active');
+                            anchors.$find(anchor => document.getElementById(anchor.hash.substring(1)).getBoundingClientRect().top > 0)?.classList?.add?.('active')
+                            $`nav ol li a.active`?.parentElement?.scrollIntoView?.(false)
+                        });
+                </script>
+            </article>
+        </section>
+        <!--<svg viewBox="0 0 500 25" preserveAspectRatio="xMinYMin meet">
+            <path d="M0,5 C150,10 350,0 500,5 L500,00 L0,0 Z" style="stroke: none; fill:currentcolor;"></path>
+        </svg>-->
+    </body>
 </html>

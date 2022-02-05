@@ -1,0 +1,8 @@
+{
+    (
+        Define symbols and special characters here.
+    )
+    classroom: '<img src="/assets/images/classroom.png" style="height: 1em; width: 1em; vertical-align: text-bottom;">',
+    check: '<span style="color:green;">\u2713</span>',
+    tableflip: '(╯°□°)╯︵ ┻━┻'
+}
