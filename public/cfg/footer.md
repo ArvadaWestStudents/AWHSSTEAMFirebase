@@ -1,3 +1,3 @@
 @@centered
-(c) 2022 Tim Wasinger, JoLynn Intermill, & The Arvada West STEAM Club
+(c) 2022-23 Trin Wasinger, JoLynn Intermill, Maggie Wasinger, & The Arvada West STEAM Club
 @@reset
