@@ -1,7 +1,7 @@
 title: Developer Guide
 
-#[intro] Welcome Developer
-This is a brief overview of how this website works. Don't worry if you don't know much about computers or programming. This website is set up so that you can easily create good looking documents with no programming experiance. How easy is it you may ask? Well... This instruction page is made using +[/dev.md](this one text file). Crazy right? You can apply all sorts of text formatting and include images, links, and more without any code. Unless you want to make significant changes or improvements, you shouldn't have to edit anything but the markup and jsion files. Read on to learn more about how to use this system.
+#[intro] Welcome Developer!
+This is a brief overview of how this website works. Don't worry if you don't know much about computers or programming. This website is set up so that you can easily create good looking documents with no programming experience. How easy is it you may ask? Well... This instruction page is made using +[/dev.md](this one text file). Crazy right? You can apply all sorts of text formatting and include images, links, and more without any code. Unless you want to make significant changes or improvements, you shouldn't have to edit anything but the markup and jsion files. Read on to learn more about how to use this system.
 
 ##[urls] URLs
 When a user visits a URL, they are shown the matching markup file. Any trailing `.html` or `/` on the URL is ignored. URLs with `.md` on the end show the raw, unrendered file. The only special case is `/` (the root page) which shows `index.md`. See the table below for examples:
